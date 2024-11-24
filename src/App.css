@@ -1,0 +1,149 @@
+/* Importation de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Styles généraux pour le corps de la page */
+body {
+    margin: 0;
+    background-color: #f7f5f5;
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+/* Conteneur principal de l'application */
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #2C3484; */
+}
+
+/* Styles pour la barre de navigation latérale */
+.sidebar {
+    position: relative;
+}
+
+/* Wrapper du carousel */
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+/* Styles pour le carousel centré */
+.centered-carousel {
+    max-width: 900px; /* Ajuste la largeur maximale du carousel */
+    width: 100%; /* Assure que le carousel prend toute la largeur disponible */
+}
+
+/* Styles pour le slogan de la navbar */
+.navbar-slogan {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 20px;
+    line-height: 1.4;
+    margin-top: 20px;
+    padding: 0px;
+    color: #34495e;
+}
+
+/* Styles pour le logo de la navbar */
+.navbar-logo {
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Contenu de la barre latérale avec défilement */
+.sidebar-content {
+    overflow-y: auto;
+}
+
+/* Styles pour les items de la barre latérale */
+.item-sidebar {
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    text-align: left;
+}
+
+/* Effet hover pour les items de la barre latérale */
+.item-sidebar:hover {
+    background-color: #cf2e2e;
+}
+
+/* Styles pour l'état actif des items de la barre latérale */
+.activeClicked::after {
+    background-color: #f0f0f0; /* Exemple de style */
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Pied de page de la barre latérale */
+.sidebar-footer {
+    text-align: center;
+    padding: 20px 5px;
+}
+
+/* Styles pour le carousel spécifique à Bytecraft */
+.bytecraft-carousel {
+    max-width: 400px; /* Ajuste la largeur maximale du carousel */
+    margin: 0 auto; /* Centre le carousel horizontalement */
+}
+
+/* Styles pour les images individuelles du carousel Bytecraft */
+.bytecraft-carousel .carousel-item img {
+    height: 400px; /* Ajuste la hauteur des images du carousel */
+    object-fit: cover; /* Ajuste le dimensionnement de l'image pour couvrir la zone définie */
+}
+
+/* Styles pour les titres des cartes dans les conteneurs */
+.container .card-title {
+    font-size: 3.5rem;
+}
+
+/* Styles pour le texte des cartes dans les conteneurs */
+.container .card-text {
+    font-size: 2.5rem;
+    /* background-color: rebeccapurple; */
+}
+
+/* Media queries pour ajustements responsives */
+
+/* Ajustements pour les tablettes (max-width: 1280px) */
+@media (max-width: 1280px) {
+    .content {
+        margin-left: 200px; /* Même largeur que la barre de navigation */
+    }
+}
+
+/* Ajustements pour les mobiles (max-width: 600px) */
+@media (max-width: 600px) {
+    .content {
+        margin-left: 0; /* Réinitialise la marge pour le contenu */
+    }
+
+    body {
+        font-size: 10px; /* Ajuste la taille de police globale pour les mobiles */
+    }
+
+    /* Ajustements pour les images responsives */
+    .responsive-img {
+        height: 30vh; /* Ajustez selon vos besoins */
+    }
+
+    /* Ajustements pour les titres de cartes sur mobile */
+    .container .card-title {
+        font-size: 1.5rem;
+        /* background-color: red; */
+        margin-top: -12%; /* Ajustement de la position */
+    }
+
+    /* Ajustements pour le texte des cartes sur mobile */
+    .container .card-text {
+        font-size: 1rem;
+    }
+}
